@@ -1,6 +1,6 @@
 import streamlit as st
 import datetime as dt
-import plotly.express as px
+#import plotly.express as px
 from modules import data
 
 
@@ -234,11 +234,11 @@ with info_container:
     # {metric_dict.get(selectbox_columns)}
     st.markdown(f"""# avg // {m}""")
 
-with plot_container:
-    px_chart = px.bar(
-        HabitData.data,
-        x="date",
-        y=selectbox_columns,
-        # marginal="box", hover_data=HabitData.data.columns
-    )
-    st.plotly_chart(px_chart, use_container_width=True)
+#with plot_container:
+#    px_chart = px.bar(
+#        HabitData.data,
+#       x="date",
+#        y=selectbox_columns,
+#        # marginal="box", hover_data=HabitData.data.columns
+#    )
+#    st.plotly_chart(px_chart, use_container_width=True)
